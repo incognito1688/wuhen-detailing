@@ -1,0 +1,1 @@
+document.addEventListener('click',e=>{const b=e.target.closest('[data-contact],[data-close]');if(!b)return;if(b.hasAttribute('data-contact'))document.querySelector('#contact').showModal();if(b.hasAttribute('data-close'))b.closest('dialog').close()});
